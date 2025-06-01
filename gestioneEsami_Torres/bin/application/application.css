@@ -1,0 +1,51 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.bg_ap{
+	-fx-background-color: #9AB6A0;
+}
+.menuBar{
+	-fx-background-color: #839AA6;
+	-fx-background-radius: 0.0 0.0 0.0 30px;
+}
+.header{
+	-fx-background-color: #D9D9D9;
+	-fx-background-radius: 0.0 0.0 15px 15px;
+}
+.heading{
+	-fx-font-size:30px;
+}
+.utility{
+	-fx-background-color: #D9D9D9;
+	-fx-background-radius: 15px;
+}
+.utility .content{
+	-fx-background-color: #D9D9D9;
+	-fx-background-radius: 0px;
+}
+.utility_2{
+	-fx-background-color: #839AA6;
+	-fx-text-fill:white ;
+	-fx-background-radius: 10px;
+}
+.utility_2 .content{
+	-fx-background-color: #839AA6;
+	-fx-background-radius: 0px;
+}
+.utility_register{
+	-fx-background-radius: 15px;
+	-fx-font-size:25px;
+}
+.utility_text{
+	-fx-font-size: 20px;
+}
+.title{
+	-fx-alignment: center-right;
+	-fx-text-fill: #27474E;
+	-fx-font-size: 40px;
+}
+.transparent{
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+.error{
+	-fx-text-fill:red ;
+}

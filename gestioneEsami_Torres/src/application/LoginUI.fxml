@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="UI" prefHeight="600.0" prefWidth="1600.0" styleClass="bg_ap" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginUIController">
+   <children>
+      <AnchorPane fx:id="login" layoutX="51.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-radius: 25px;" styleClass="utility" stylesheets="@application.css">
+         <children>
+            <Text layoutX="187.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non hai un account?" />
+            <Hyperlink layoutX="350.0" layoutY="457.0" onAction="#doMove" text="Crea un nuovo account" />
+            <Button layoutX="225.0" layoutY="306.0" mnemonicParsing="false" onAction="#doLogIn" prefHeight="40.0" prefWidth="250.0" style="-fx-font-size: 17px;" styleClass="utility_2" stylesheets="@application.css" text="Log In" />
+            <Label layoutX="309.0" layoutY="32.0" styleClass="heading" stylesheets="@application.css" text="Log In" />
+            <Label alignment="CENTER_RIGHT" layoutX="187.0" layoutY="168.0" styleClass="utility_text" stylesheets="@application.css" text="Username:" />
+            <Label alignment="CENTER_RIGHT" layoutX="190.0" layoutY="219.0" styleClass="utility_text" stylesheets="@application.css" text="Password:" />
+            <TextField fx:id="uNameL" layoutX="326.0" layoutY="168.0" />
+            <PasswordField fx:id="pWordL" layoutX="326.0" layoutY="219.0" />
+            <Label fx:id="errorL" alignment="CENTER" layoutX="100.0" layoutY="264.0" prefHeight="30.0" prefWidth="500.0" styleClass="error" stylesheets="@application.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signin" layoutX="851.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-radius: 25px;" styleClass="utility" stylesheets="@application.css">
+         <children>
+            <Text layoutX="192.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hai già un account?" />
+            <Hyperlink layoutX="357.0" layoutY="457.0" onAction="#doMove" text="Accedi al tuo account" />
+            <Button layoutX="36.0" layoutY="123.0" mnemonicParsing="false" onAction="#isStudent" prefHeight="330.0" prefWidth="280.0" stylesheets="@application.css" text="Alunno">
+               <styleClass>
+                  <String fx:value="utility_2" />
+                  <String fx:value="utility_register" />
+               </styleClass>
+            </Button>
+            <Button layoutX="384.0" layoutY="123.0" mnemonicParsing="false" onAction="#isTeacher" prefHeight="330.0" prefWidth="280.0" stylesheets="@application.css" text="Docente">
+               <styleClass>
+                  <String fx:value="utility_2" />
+                  <String fx:value="utility_register" />
+               </styleClass>
+            </Button>
+            <Label layoutX="345.0" layoutY="258.0" styleClass="utility_text" stylesheets="@application.css" text="o" />
+            <Label layoutX="322.0" layoutY="84.0" styleClass="utility_text" stylesheets="@application.css" text="Sei un:" />
+            <Label layoutX="306.0" layoutY="32.0" styleClass="heading" stylesheets="@application.css" text="Sign In" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="makeAcc" layoutX="851.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-radius: 25px;" styleClass="utility" stylesheets="@application.css">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="187.0" layoutY="210.0" styleClass="utility_text" stylesheets="@application.css" text="Username:" />
+            <Label alignment="CENTER_RIGHT" layoutX="193.0" layoutY="261.0" styleClass="utility_text" stylesheets="@application.css" text="Password:" />
+            <Label alignment="CENTER_RIGHT" layoutX="222.0" layoutY="111.0" styleClass="utility_text" stylesheets="@application.css" text="Nome:" />
+            <Label alignment="CENTER_RIGHT" layoutX="189.0" layoutY="162.0" styleClass="utility_text" stylesheets="@application.css" text="Cognome:" />
+            <TextField fx:id="uNameR" layoutX="326.0" layoutY="209.0" />
+            <TextField fx:id="fName" layoutX="326.0" layoutY="111.0" />
+            <TextField fx:id="lName" layoutX="326.0" layoutY="161.0" />
+            <PasswordField fx:id="pWordR" layoutX="326.0" layoutY="260.0" />
+            <Label layoutX="304.0" layoutY="32.0" styleClass="heading" stylesheets="@application.css" text="Sign In" />
+            <Button layoutX="225.0" layoutY="392.0" mnemonicParsing="false" onAction="#doSignIn" prefHeight="40.0" prefWidth="250.0" styleClass="utility_2" stylesheets="@application.css" text="Sign In" />
+            <AnchorPane fx:id="stu" layoutX="88.0" layoutY="301.0" prefHeight="50.0" prefWidth="448.0">
+               <children>
+                  <TextField fx:id="sNum" layoutX="238.0" layoutY="10.0" />
+                  <Label layoutX="105.0" layoutY="10.0" styleClass="utility_text" stylesheets="@application.css" text="Matricola:" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="errorR" alignment="CENTER" layoutX="100.0" layoutY="351.0" prefHeight="30.0" prefWidth="500.0" styleClass="error" stylesheets="@application.css" />
+            <Text layoutX="192.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hai già un account?" />
+            <Hyperlink layoutX="355.0" layoutY="457.0" onAction="#doMove" text="Accedi al tuo account" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

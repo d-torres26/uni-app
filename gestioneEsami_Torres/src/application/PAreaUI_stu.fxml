@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="bg_ap" stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.PAreaUI_stuController">
+   <children>
+      <TextArea fx:id="info" layoutX="60.0" layoutY="157.0" prefHeight="350.0" prefWidth="400.0" style="-fx-background-radius: 0px;" styleClass="utility" stylesheets="@application.css" />
+      <AnchorPane fx:id="sub" layoutX="529.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 25px;" styleClass="utility_2" stylesheets="@application.css">
+         <children>
+            <ChoiceBox fx:id="courseList" layoutX="25.0" layoutY="94.0" prefWidth="150.0" />
+            <Button layoutX="68.0" layoutY="143.0" mnemonicParsing="false" onAction="#doSubscribe" styleClass="utility" stylesheets="@application.css" text="Iscriviti" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="sub_btn" layoutX="562.0" layoutY="285.0" mnemonicParsing="false" onAction="#doShowCourseSub" styleClass="utility" stylesheets="@application.css" text="Isciviti a un corso" />
+      <Label layoutX="112.0" layoutY="94.0" styleClass="heading" stylesheets="@application.css" text="Informazioni personali" />
+      <Button layoutX="299.0" layoutY="527.0" mnemonicParsing="false" onAction="#doDeleteAcc" styleClass="utility" stylesheets="@application.css" text="Elimina account" />
+      <Button layoutX="95.0" layoutY="527.0" mnemonicParsing="false" onAction="#doChangeInfo" styleClass="utility" stylesheets="@application.css" text="Modifica informazioni" />
+   </children>
+</AnchorPane>

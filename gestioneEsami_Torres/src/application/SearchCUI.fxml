@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="bg_ap" stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.SearchCUIController">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-radius: 25px;" styleClass="utility" stylesheets="@application.css">
+         <children>
+            <ChoiceBox fx:id="courseList" layoutX="507.0" layoutY="232.0" prefWidth="150.0" styleClass="utility_2" stylesheets="@application.css" />
+            <Button layoutX="494.0" layoutY="272.0" mnemonicParsing="false" onAction="#doShowCourse" styleClass="utility_2" stylesheets="@application.css" text="Mostra le info del corso" />
+            <Label layoutX="537.0" layoutY="187.0" text="Scegli il corso" />
+            <TextArea fx:id="output" layoutX="46.0" layoutY="83.0" prefHeight="350.0" prefWidth="400.0" style="-fx-background-radius: 0px;" styleClass="utility_2" stylesheets="@application.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="bg_ap" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListsUIController">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-radius: 25px;" styleClass="utility" stylesheets="@application.css">
+         <children>
+            <ChoiceBox fx:id="lists" layoutX="38.0" layoutY="190.0" prefWidth="150.0" styleClass="utility_2" stylesheets="@application.css" />
+            <Label layoutX="78.0" layoutY="151.0" text="Scegli lista" />
+            <Button layoutX="57.0" layoutY="233.0" mnemonicParsing="false" onAction="#doShowList" styleClass="utility_2" stylesheets="@application.css" text="Mostra la lista" />
+            <TextArea fx:id="output" layoutX="255.0" layoutY="91.0" prefHeight="350.0" prefWidth="400.0" style="-fx-background-radius: 0px;" styleClass="utility_2" stylesheets="@application.css" />
+            <Button layoutX="71.0" layoutY="350.0" mnemonicParsing="false" onAction="#doSaveAs" styleClass="utility_2" stylesheets="@application.css" text="Salva lista" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
